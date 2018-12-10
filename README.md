@@ -67,7 +67,7 @@ Setting the `GINKGO_NODES` environment variable to a value of `1` will allow ser
 If you have Go 1.5 or greater already installed and working properly and also have the [Glide](https://github.com/Masterminds/glide) dependency management tool for Go installed, you may clone this repository into your `$GOPATH`:
 
 ```console
-git clone git@github.com:deis/workflow-e2e.git $GOPATH/src/github.com/deis/workflow-e2e
+git clone git@github.com:teamhephy/workflow-e2e.git $GOPATH/src/github.com/deis/workflow-e2e
 ```
 
 One-time execution of the following will resolve the test suite's own dependencies:
@@ -101,7 +101,7 @@ If you do not have Go 1.5 or greater installed locally, but do have a Docker dae
 In this case, you may clone this repository into a path of your own choosing (does not need to be on your `$GOPATH`):
 
 ```console
-git clone git@github.com:deis/workflow-e2e.git /path/of/your/choice
+git clone git@github.com:teamhephy/workflow-e2e.git /path/of/your/choice
 ```
 
 Then build the test image and execute the test suite:
@@ -117,7 +117,7 @@ A third option is to run the test suite from within the very cluster that is und
 To install the [helm](https://github.com/kubernetes/helm) chart and start the tests, assuming helm and its corresponding server component tiller are [installed](https://github.com/kubernetes/helm/blob/master/docs/install.md):
 
 ```console
-git clone git clone git@github.com:deis/workflow-e2e.git; cd workflow-e2e
+git clone git clone git@github.com:teamhephy/workflow-e2e.git; cd workflow-e2e
 helm dependency update charts/workflow-e2e
 helm upgrade --install workflow-e2e charts/workflow-e2e --namespace deis
 ```
